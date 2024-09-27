@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import mongoose, {Mongoose} from "mongoose"
 
 const prismaClientSingleton = () => {
   return new PrismaClient();
@@ -17,4 +16,4 @@ export default prisma;
 
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
-const MONGODB_URL = process.MONGODB_URL!;
+
