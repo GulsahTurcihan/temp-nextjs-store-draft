@@ -1,5 +1,5 @@
 datasource db {
-  provider          = "postgresql"
+  provider          = "mongodb"
   url               = env("DATABASE_URL")
   directUrl         = env("DIRECT_URL")
 }
@@ -9,7 +9,7 @@ generator client {
 }
 
 model Product {
-  id           String     @id @default(uuid())
+  id           String     @id @default(uuid()) @map("_id")
   name        String
   company     String
   description String

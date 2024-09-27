@@ -8,6 +8,9 @@ function ProductRating({ productId }: { productId: string }) {
   const className = `flex gap-1 items-center text-md mt-1 mb-4`;
   const countValue = `(${count}) reviews`;
 
+  console.log(productId);
+  
+
   return (
     <span className={className}>
       <FaStar className="w-3 h-3" />
