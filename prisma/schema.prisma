@@ -9,7 +9,7 @@ generator client {
 }
 
 model Product {
-  id           String     @id @default(uuid()) @map("_id")
+  id           String     @id @default(uuid())
   name        String
   company     String
   description String
