@@ -1,7 +1,7 @@
-import hero1 from "@/public/images/hero1.jpg";
-import hero2 from "@/public/images/hero2.jpg";
-import hero3 from "@/public/images/hero3.jpg";
-import hero4 from "@/public/images/hero4.jpg";
+import hero1 from "@/public/images/hero1.jpeg";
+import hero2 from "@/public/images/hero2.jpeg";
+import hero3 from "@/public/images/hero3.jpeg";
+import hero4 from "@/public/images/hero4.jpeg";
 import {
   Carousel,
   CarouselContent,
@@ -28,6 +28,7 @@ function HeroCarousel() {
                       src={image}
                       alt="hero"
                       className="w-full h-[24rem] rounded-md object-cover"
+                      priority
                     ></Image>
                   </CardContent>
                 </Card>

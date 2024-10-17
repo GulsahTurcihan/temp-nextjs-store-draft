@@ -6,7 +6,7 @@ function AddToCart({ productId }: { productId: string }) {
   
   return (
     <Button className="capitalize mt-8" size="lg">
-      {productId}
+      Add to cart
     </Button>
   );
 }
